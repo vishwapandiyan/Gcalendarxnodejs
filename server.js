@@ -11,7 +11,7 @@ const authRoutes = require('./routes/authRoutes');
 app.use(express.json());
 
 // Mount routes
-app.use('/', authRoutes); // Handles routes like /login and /oauth2callback
+app.use('/', authRoutes); 
 
 // Health check route
 app.get('/', (req, res) => {
